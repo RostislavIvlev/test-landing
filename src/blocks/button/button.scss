@@ -1,0 +1,28 @@
+@import "../../scss/main.scss";
+
+.btn {
+    @include size(149px, 52px);
+    @include fontSettings($rubikBold, 18px, 18px, $white);
+    border: 0px;
+    border-radius: 85px;
+    background-color: $blue;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(17,45,87,0.42);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(17,45,87,0.42);
+        box-shadow: 0px 1px 5px 0px rgba(17,45,87,0.42);
+    }
+
+    &:active {
+        -webkit-box-shadow: 0px 8px 10px 3px rgba(17,45,87,0.42);
+        -moz-box-shadow: 0px 8px 10px 3px rgba(17,45,87,0.42);
+        box-shadow: 0px 8px 10px 3px rgba(17,45,87,0.42);
+    }
+
+    &_white {
+        background-color: $white;
+        color: $black;
+    }
+}
