@@ -4,3 +4,18 @@ include ../mixins
   .logo-wrapper
     +logo("#")
       img(src="/assets/images/logo.png", alt="Logo").logo__img
+
+  .nav-panel
+    each value in ["Home", "Product", "About", "Contact"]
+      a(href="#").nav-panel__element= value
+  
+
+  +button("Login", "login")
+
+  .header__nav-btn subject
+
+
+script.
+    $(".header__nav-btn").on("click", function() {
+      $(this).siblings(".nav-panel").toggleClass("nav-panel_expanded");
+    })

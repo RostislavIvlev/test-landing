@@ -1,0 +1,17 @@
+@import "./main.scss";
+
+.components-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .page-content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 51px 30px 51px;
+        border: 1px solid $black-gray;
+        flex-shrink: 1;
+    }
+
+}
