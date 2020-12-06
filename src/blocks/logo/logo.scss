@@ -1,1 +1,8 @@
 @import "../../scss/main.scss";
+
+.logo {
+    
+    &__img {
+        @include size(186px, auto);
+    }
+}
