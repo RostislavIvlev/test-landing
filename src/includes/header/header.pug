@@ -9,8 +9,8 @@ include ../mixins
     each value in ["Home", "Product", "About", "Contact"]
       a(href="#").nav-panel__element= value
   
-
-  +button("Login", "login")
+  .header-btn
+    +button("Login", "login")
 
   .header__nav-btn subject
 
