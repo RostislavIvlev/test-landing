@@ -1,0 +1,14 @@
+mixin input-text(mods, placeholder)
+  -
+    if (typeof (options) === "undefined") {
+        var options = {}
+    }
+    var allMods = "";
+    if (typeof(options) !== "undefined" && mods) {
+        var modList = mods.split(",");
+        for (var i = 0; i < modList.length; i++) {
+            allMods = allMods + " input_" + modList[i].trim()
+        }
+    }
+
+  input.input(type="text" class=allMods placeholder=placeholder)&attributes(attributes)
